@@ -111,7 +111,7 @@
         },
         "adminPassword": {
             "type": "secureString",
-			"defaultValue": null
+			"defaultValue": "Demo@12345"
         },
         "patchMode": {
             "type": "string",
