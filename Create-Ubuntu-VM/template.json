@@ -3,19 +3,24 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "qatarcentral"
+            "type": "string",
+			 "defaultValue": "qatarcentral"
         },
         "networkInterfaceName": {
-            "value": "arm-wind901"
+            "type": "string",
+			 "defaultValue": "arm-wind901"
         },
         "enableAcceleratedNetworking": {
-            "value": true
+            "type": "bool",
+			"defaultValue": true
         },
         "networkSecurityGroupName": {
-            "value": "arm-wind-nsg"
+            "type": "string",
+			"defaultValue": "arm-wind-nsg"
         },
         "networkSecurityGroupRules": {
-            "value": [
+            "type": "array",
+			"defaultValue": [
                 {
                     "name": "RDP",
                     "properties": {
@@ -32,18 +37,22 @@
             ]
         },
         "subnetName": {
-            "value": "default"
+            "type": "string",
+			 "defaultValue": "default"
         },
         "virtualNetworkName": {
-            "value": "arm-wind-vnet"
+            "type": "string",
+			"defaultValue": "arm-wind-vnet"
         },
         "addressPrefixes": {
-            "value": [
+            "type": "array",
+			 "defaultValue": [
                 "10.1.0.0/16"
             ]
         },
         "subnets": {
-            "value": [
+            "type": "array",
+			"defaultValue": [
                 {
                     "name": "default",
                     "properties": {
@@ -53,49 +62,64 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "arm-wind-ip"
+            "type": "string",
+			"defaultValue": "arm-wind-ip"
         },
         "publicIpAddressType": {
-            "value": "Static"
+            "type": "string",
+			"defaultValue": "Static"
         },
         "publicIpAddressSku": {
-            "value": "Standard"
+            "type": "string",
+			"defaultValue": "Standard"
         },
         "pipDeleteOption": {
-            "value": "Detach"
+            "type": "string",
+			"defaultValue": "Detach"
         },
         "virtualMachineName": {
-            "value": "arm-wind"
+            "type": "string",
+			"defaultValue": "arm-wind"
         },
         "virtualMachineComputerName": {
-            "value": "arm-wind"
+            "type": "string",
+			"defaultValue": "arm-wind"
         },
         "virtualMachineRG": {
-            "value": "NetworkWatcherRG"
+            "type": "string",
+			"defaultValue": "NetworkWatcherRG"
         },
         "osDiskType": {
-            "value": "Premium_LRS"
+            "type": "string",
+			"defaultValue": "Premium_LRS"
         },
         "osDiskDeleteOption": {
-            "value": "Delete"
+            "type": "string",
+			"defaultValue": "Delete"
         },
         "virtualMachineSize": {
-            "value": "Standard_D2s_v3"
+            "type": "string",
+			"defaultValue": "Standard_D2s_v3"
         },
         "nicDeleteOption": {
-            "value": "Detach"
+            "type": "string",
+			"defaultValue": "Detach"
         },
         "adminUsername": {
-            "value": "sravani"
+            "type": "string",
+			"defaultValue": "Demo"
         },
         "adminPassword": {
-            "value": null
+            "type": "secureString",
+			"defaultValue": null
         },
         "patchMode": {
-            "value": "AutomaticByOS"
+            "type": "string",
+			"defaultValue": "AutomaticByOS"
         },
         "enableHotpatching": {
-            "value": false
+            "type": "bool",
+			"defaultValue": false
         }
     },
     "variables": {
